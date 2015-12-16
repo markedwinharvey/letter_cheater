@@ -7,7 +7,7 @@ def main():
 	master_list = [[] for x in range(29)]	#create master_list
 	for word in doc:
 		master_list[len(word)].append(word)		#sort master_list by word length
-	print 'This list contains:',len(doc),'words'
+	print 'This list contains:',len(doc),'words';print
 	#for wordlist in range(len(master_list)):
 	#	print 'Words with',wordlist,'letters:',len(master_list[wordlist])
 	current_list = copy.copy(master_list)		#copy master_list (unchanging) into current_list for sequential truncation
